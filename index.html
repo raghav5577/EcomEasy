@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcomEasy - Simple Ecommerce</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e992003056.js" crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="assets/javascript/model.js" defer></script>
+    <script src="assets/javascript/api.js" defer></script>
+    <script src="assets/javascript/main.js" defer></script>
+    
+</head>
+<body>
+    
+    <div id="container">
+        
+        <header id="header">
+            <div class="container flex justify-space-between align-items-center">
+                <div class="logo">
+                    <h1>EcomEasy</h1>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search products..." id="searchInput">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="cart-control">
+                    <button id="cartToggle" class="btn">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        Cart (<span id="cart-count">0</span>)
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <nav id="main-navigation">
+            <div class="container">
+                <ul class="flex">
+                    <li><a href="#"><i class="fa-solid fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fa-solid fa-shirt"></i> Clothing</a></li>
+                    <li><a href="#"><i class="fa-solid fa-mobile"></i> Electronics</a></li>
+                    <li><a href="#"><i class="fa-solid fa-book"></i> Books</a></li>
+                    <li><a href="#"><i class="fa-solid fa-tags"></i> Deals</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="content">
+            <div class="container">
+                <div class="flex">
+                    <main id="main">
+                        <section id="products-section">
+                            <h2>Featured Products</h2>
+                            <div id="products-grid" class="grid"></div>
+                        </section>
+                    </main>
+
+                    <aside id="sidebar" class="cart-sidebar hidden">
+                        <h2 class="text-center">Your Cart</h2>
+                        <ul id="cart-list"></ul>
+                        <div class="cart-footer">
+                            <div class="cart-total">
+                                <strong>Total:</strong> ₹<span id="cart-total">0.00</span>
+                            </div>
+                            <button id="checkout-btn" class="btn btn-primary">Checkout</button>
+                            <button id="clear-cart" class="btn btn-danger">Clear Cart</button>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            
+        </footer>
+
+    </div>
+    
+</body>
+</html>
