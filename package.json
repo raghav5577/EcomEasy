@@ -1,0 +1,28 @@
+{
+  "name": "ecomeasy",
+  "version": "1.0.0",
+  "description": "A lightweight, fully functional ecommerce website built with vanilla JavaScript, HTML5, and CSS3",
+  "homepage": "https://raghav5577.github.io/EcomEasy/",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'Open index.html in your browser to run the application'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raghav5577/EcomEasy.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "shopping-cart",
+    "javascript",
+    "html5",
+    "css3",
+    "localstorage",
+    "rest-api"
+  ],
+  "author": "Raghav Karnatak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raghav5577/EcomEasy/issues"
+  }
+}
